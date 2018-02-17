@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easyrest.MainFormController">
+    <stylesheets>
+        <URL value="@mainform.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="592.0" prefWidth="754.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="130.0" layoutY="14.0" prefHeight="17.0" prefWidth="120.0" text="Сотрудники онлайн" AnchorPane.leftAnchor="130.0" />
+            <ListView layoutX="130.0" layoutY="37.0" prefHeight="159.0" prefWidth="131.0" AnchorPane.leftAnchor="130.0" />
+            <TextArea fx:id="mess" layoutX="130.0" layoutY="522.0" prefHeight="50.0" prefWidth="525.0" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="99.0" />
+            <ListView fx:id="chat" layoutX="130.0" layoutY="271.0" prefHeight="244.0" prefWidth="600.0" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="24.0" />
+            <Separator layoutX="114.0" layoutY="237.0" prefHeight="0.0" prefWidth="638.0" AnchorPane.bottomAnchor="352.0" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="2.0" />
+            <Label layoutX="130.0" layoutY="247.0" prefHeight="17.0" prefWidth="28.0" text="Чат" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="130.0" />
+            <Separator layoutX="111.0" layoutY="-8.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button layoutX="657.0" layoutY="522.0" mnemonicParsing="false" onAction="#SendMessage" prefHeight="50.0" prefWidth="75.0" text="Отправить" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="22.0" />
+            <Button layoutX="657.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Настройки" AnchorPane.rightAnchor="21.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="592.0" prefWidth="120.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="17.0" layoutY="194.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="87.0" text="События" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="16.0" />
+            <Button layoutX="17.0" layoutY="261.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="87.0" text="Статистика" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="16.0" />
+            <Button layoutX="17.0" layoutY="75.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="87.0" text="Меню" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="16.0" />
+            <Button fx:id="staff" layoutX="17.0" layoutY="137.0" mnemonicParsing="false" onAction="#goStaff" prefHeight="50.0" prefWidth="87.0" text="Сотрудники" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="16.0" />
+            <Button layoutX="17.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="87.0" text="Главная" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="16.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
